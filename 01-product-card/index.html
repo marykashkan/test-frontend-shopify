@@ -12,101 +12,85 @@
   </head>
   <body>
     <main>
-      <div class="content">
-        <div class="products">
-          <div class="container">
-            <div class="products__title">
-              <h1 class="">Товары недели</h1>
-            </div>
-            <div class="products__body">
-              <div class="products__row">
-                <div class="product__card">
-                  <div class="product__card__img">
-                    <img
-                      class="product__img"
-                      src="./assets/Image.jpg"
-                      alt="product"
-                    />
-                    <div class="product__tags">
-                      <div class="product__tag tag-1">Новинка</div>
-                      <div class="product__tag tag-2">Последний</div>
-                    </div>
-                  </div>
-                  <div class="product__card__info">
-                    <div class="product__text">
-                      <div class="product__heading">
-                        <h2>Апельсиновый сок</h2>
-                      </div>
-                      <div class="product__description">
-                        <p>
-                          Он придется по душе, даже если ты слива лиловая,
-                          спелая, садовая
-                        </p>
-                      </div>
-                    </div>
-                    <div class="product__card__button">
-                      <button class="button button-default">В корзину</button>
-                    </div>
-                  </div>
+      <h1 class="hidden">Магазин апельсинового сока</h1>
+      <section class="products" aria-labelledby="products_heading">
+        <div class="container">
+          <h2 id="products_heading" class="products__heading heading">
+            Товары недели
+          </h2>
+          <ul class="products__list" role="list">
+            <li class="products__item">
+              <article class="products__card">
+                <img class="products__img" src="./assets/Image.jpg" alt="" />
+                <ul class="tags" role="list">
+                  <li class="tags__item tags__item--new">Новинка</li>
+                  <li class="tags__item tags__item--last">Последний</li>
+                </ul>
+                <div class="products__info products-info">
+                  <h2 class="products-info__heading">
+                    <a href="#" class="products-info__link">Апельсиновый сок</a>
+                  </h2>
+                  <p class="products-info__description">
+                    Он придется по душе, даже если ты слива лиловая, спелая,
+                    садовая
+                  </p>
+                  <button
+                    type="button"
+                    class="products__button button button-default"
+                  >
+                    <span class="hidden">Добавить апельсиновый сок</span>
+                    В корзину
+                  </button>
                 </div>
-                <div class="product__card center">
-                  <div class="product__card__img">
-                    <img
-                      class="product__img"
-                      src="./assets/Image.jpg"
-                      alt="product"
-                    />
-                  </div>
-                  <div class="product__card__info">
-                    <div class="product__text">
-                      <div class="product__heading">
-                        <h2>Апельсиновый сок</h2>
-                      </div>
-                      <div class="product__description">
-                        <p>
-                          Он придется по душе, даже если ты слива лиловая,
-                          спелая, садовая. Ну что сказать? Ну что сказать?
-                          Устроены так длинные описания.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="product__card__button">
-                      <button class="button button-default">В корзину</button>
-                    </div>
-                  </div>
+              </article>
+            </li>
+            <li class="products__item">
+              <article class="products__card">
+                <img class="products__img" src="./assets/Image.jpg" alt="" />
+
+                <div class="products__info products-info">
+                  <h2 class="products-info__heading">
+                    <a href="#" class="products-info__link">Апельсиновый сок</a>
+                  </h2>
+                  <p class="products-info__description">
+                    Он придется по душе, даже если ты слива лиловая, спелая,
+                    садовая. Ну что сказать? Ну что сказать? Устроены так
+                    длинные описания.
+                  </p>
+                  <button
+                    type="button"
+                    class="products__button button button-default"
+                  >
+                    <span class="hidden">Добавить апельсиновый сок</span>
+                    В корзину
+                  </button>
                 </div>
-                <div class="product__card">
-                  <div class="product__card__img">
-                    <img
-                      class="product__img"
-                      src="./assets/Image.jpg"
-                      alt="product"
-                    />
-                  </div>
-                  <div class="product__card__info">
-                    <div class="product__text">
-                      <div class="product__heading">
-                        <h2>Апельсиновый сок</h2>
-                      </div>
-                      <div class="product__description">
-                        <p>
-                          Он придется по душе, даже если ты слива лиловая,
-                          спелая, садовая
-                        </p>
-                      </div>
-                    </div>
-                    <div class="product__card__button">
-                      <button class="button button-disabled">
-                        Закончилось
-                      </button>
-                    </div>
-                  </div>
+              </article>
+            </li>
+            <li class="products__item">
+              <article class="products__card">
+                <img class="products__img" src="./assets/Image.jpg" alt="" />
+
+                <div class="products__info products-info">
+                  <h2 class="products-info__heading">
+                    <a href="#" class="products-info__link">Апельсиновый сок</a>
+                  </h2>
+                  <p class="products-info__description">
+                    Он придется по душе, даже если ты слива лиловая, спелая,
+                    садовая
+                  </p>
+                  <button
+                    type="button"
+                    class="products__button button button-disabled"
+                  >
+                    Закончилось
+                  </button>
                 </div>
-              </div>
-            </div>
-          </div>
+              </article>
+            </li>
+          </ul>
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>
